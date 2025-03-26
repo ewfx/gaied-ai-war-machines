@@ -1,0 +1,16 @@
+[
+    {
+        "email_id": "12345",
+        "subject": "Fee Payment Request - Ongoing Fee",
+        "body": "Dear Team, please process the ongoing fee payment for Deal XYZ, amount $5000, expiry 12/31/2025.",
+        "attachments": ["fee_invoice.pdf"],
+        "sender": "client@example.com",
+        "received_at": "2025-03-25T10:00:00Z"
+    },
+    {
+        "email_id": "67890",
+        "subject": "Money Movement - Inbound",
+        "body": "Please process an inbound payment for Principal + Interest. Deal: ABC123, Amount: $100,000.",
+        "attachments": []
+    }
+]
