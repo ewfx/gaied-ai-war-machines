@@ -1,9 +1,6 @@
-import openai
 from classifier import classify_email
 from ocr_extractor import extract_text_from_attachment
 from deduplicator import check_duplicate
-
-openai.api_key = "your-api-key"
 
 def process_email(email):
     # Step 1: Classify email

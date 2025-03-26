@@ -1,23 +1,14 @@
-import openai
+from gpt4all import GPT4All
 
-def classify_email(subject, body):
-    prompt = f"""
-    Classify this email into a request type and sub-request type.
+# Load the GPT4All model
+model_path = "mistral-7b.gguf"  # Update this with your downloaded model file
+gpt4all_model = GPT4All(model_path)
 
-    Subject: {subject}
-    Body: {body}
-
-    Available request types: Adjustment, AU Transfer, Closing Notice, Commitment Change, Fee Payment, Money Movement.
-    Available sub-requests depend on the type.
-
-    Output format:
-    {{"request_type": "X", "sub_request_type": "Y"}}
-    """
-
-    response = openai.ChatCompletion.create(
-        model="gpt-4-turbo",
-        messages=[{"role": "system", "content": "You are an expert at classifying emails into predefined categories."},
-                  {"role": "user", "content": prompt}]
-    )
-
-    return response["choices"][0]["message"]["content"]
+def classify_email(email_content):
+    """Classify email content using GPT4All."""
+    prompt = f"Classify this email and determine its request type: {email_content}"
+    
+    with gpt4all_model as model:
+        response = model.generate(prompt, max_tokens=100)
+    
+    return response  # Returns the classification result
