@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "sender": "client1@example.com",
+        "subject": "Request for Adjustment - Amendment Fees",
+        "body": "Dear Support, We need an adjustment for Amendment Fees related to Deal ABC123. Amount: $5000. Expiry: 2025-12-31.",
+        "attachments": []
+    },
+    {
+        "id": 2,
+        "sender": "client2@example.com",
+        "subject": "Money Movement - Inbound - Principle + Interest",
+        "body": "Hello, Please process an inbound money movement for Principle + Interest for Deal XYZ789. Amount: $10000.",
+        "attachments": []
+    }
+]
