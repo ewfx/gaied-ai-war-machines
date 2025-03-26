@@ -5,8 +5,12 @@ import json
 app = FastAPI()
 
 # Load mock emails
-with open("data/sample_emails.json") as f:
+with open("../data/sample_emails.json") as f:
     mock_emails = json.load(f)
+
+@app.get("/")
+def read_root():
+    return {"message": "API is running!"}
 
 @app.get("/process-emails")
 def process_mock_emails():
