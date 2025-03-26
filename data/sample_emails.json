@@ -3,7 +3,7 @@
         "email_id": "12345",
         "subject": "Fee Payment Request - Ongoing Fee",
         "body": "Dear Team, please process the ongoing fee payment for Deal XYZ, amount $5000, expiry 12/31/2025.",
-        "attachments": ["fee_invoice.pdf"],
+        "attachments": [],
         "sender": "client@example.com",
         "received_at": "2025-03-25T10:00:00Z"
     },
