@@ -10,7 +10,7 @@
     {
         "email_id": "67890",
         "subject": "Money Movement - Inbound",
-        "body": "Please process an inbound payment for Principal + Interest. Deal: ABC123, Amount: $100,000.",
+        "body": "please process an inbound payment for Principal + Interest. Deal: ABC123, Amount: $100,000.",
         "attachments": []
     }
 ]
