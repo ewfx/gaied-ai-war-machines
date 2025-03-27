@@ -3,7 +3,7 @@ import json
 import os
 
 # Set your Gemini API Key (Get it from Google AI Studio)
-GEMINI_API_KEY = "AIzaSyDvjPP1w9WYqi0jDZw3AFi1fvt2goDu6XQ"  # Replace with your actual API key
+GEMINI_API_KEY = ""  # Replace with your actual API key
 
 # Initialize Gemini API
 genai.configure(api_key=GEMINI_API_KEY)
