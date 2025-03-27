@@ -13,3 +13,17 @@ def check_duplicate(email):
             return True
     index.add(vector)
     return False
+
+if __name__ == "__main__":
+    example_email = {
+        "subject": "Request for Adjustment - Reallocation Fees",
+        "body": "Dear Support Team, \n\nWe need to request an adjustment for reallocation fees for Deal XYZ. The amount is $25,000."
+    }
+    example_email2 = {
+        "subject": "Request for Adjustment - Reallocation Fees",
+        "body": "Dear Support Team, \n\nWe need to request an adjustment for reallocation fees for Deal XYZ. The amount is $25,000."
+    }
+    result = check_duplicate(example_email)
+    print(result)
+    result2 = check_duplicate(example_email2)
+    print(result2)
